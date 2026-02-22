@@ -1,0 +1,401 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TemplateEmail</title>
+    <!-- <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" /> -->
+
+    <!--get image from free image storage:https://ru.imgbb.com/-->
+    <!--<table style="table-layout: auto; width: auto;"> for <a style="max-width: max-content;"> </a> -->
+
+    <!--HTML E-Mail formatting issues in Apple Mail Client: https://stackoverflow.com/questions/24547765/html-e-mail-formatting-issues-in-apple-mail-client-->
+    <style type="text/css">
+      .applelinksBlack a {color:#000000 !important; text-decoration:none;}
+    </style>
+    <!--HTML E-Mail formatting issues in Apple Mail Client-->
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+      table {
+        border-spacing: 0;
+        mso-cellspacing: 0;
+        mso-padding-alt: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      #outlook a {
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #e8fbfa;
+        font-size: 16px;
+      }
+
+      .col-header {
+          width: 50% !important;
+          max-width: 100% !important;
+        }
+
+
+      @media screen and (max-width: 559.98px) {
+        .user-social {
+          width: 92% !important;
+          display: block !important;
+          margin-bottom: 10px !important;
+        }
+      }
+
+      @media screen and (max-width: 599.98px) {
+        .full-width {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        td[align="left"] {
+          text-align: center;
+        }
+
+        .header td {
+          display: block !important;
+          width: 100% !important;
+          padding: 12px 24px !important;
+          text-align: center !important;
+          border-bottom: 1px solid #F3F0F7;
+          box-sizing: border-box !important;
+        }
+
+        .header td.last-td {
+          border-bottom: unset;
+        }
+        
+        .header td a {
+          white-space: normal !important;
+          font-size: 14px !important;
+          word-break: break-word;
+        }
+        
+        .header {
+          width: 100% !important;
+          box-sizing: border-box !important;
+        }
+
+        .project-title {
+          font-size: 18px !important;
+        }
+
+        .project-text {
+          font-size: 12px !important;
+        }
+
+        .person-text {
+          padding: 0 20px 0px 20px !important;
+          font-size: 20px !important;
+        }
+
+        .mobile-padding {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .mobile-col-padding {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+
+        
+      }
+      @media screen and (max-width: 550.98px) {
+        .first-column{
+          width: 25% !important; 
+        }
+      }
+
+      @media screen and (max-width: 399.98px) {
+        br {
+          display: none !important;
+        }
+
+        .two-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .two-columns .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .three-columns .column {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .three-columns .column img {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+				.four-columns .column {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+
+				.four-columns .column img {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+      }
+
+      /* :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      } */
+
+      /* @media (prefers-color-scheme: dark) {
+        table,
+        td {
+          background-color: #06080B !important;
+        }
+
+        h1,
+        h2,
+        p {
+          color: #ffffff !important;
+        }
+      } */
+
+    </style>
+    <!--[if (gte mso 9) | (IE)]>
+      <style type="text/css">
+        table {
+          border-collapse: collapse !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!--[if (gte mso 9) | (IE)]>
+      <xml>
+        <o:OfficeDocumentSettings>
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+  </head>
+  <body style="Margin:0; padding:0;min-width:100%;background-color: #dde0e1;">
+    <!--[if (gte mso 9) | (IE)]>
+      <style type="text/css">
+        body { background-color: #dde0e1 !important;}
+        body, table, td, p, a { font-family: sans-serif, Arial, Helvetica !important;}
+      </style>
+    <![endif]-->
+
+    <center style="width: 100%;table-layout: fixed;background-color: #dde0e1;padding-top: 40px; padding-bottom: 40px;">
+      <div style="max-width: 600px; margin: 0 auto; background-color: #fafdfe;box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+        <!-- Прехедер -->
+        <div style="font-size:0;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">
+          <!-- Предехер -->
+        </div>
+        <!--[if (gte mso 9) | (IE)]>
+          <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+          <tr>
+          <td>
+        <![endif]-->
+        <table  border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #fafdfe;color: #565656;Margin:0;padding:0;max-width: 600px; width:100%; font-family: 'Inter', Arial, sans-serif, Helvetica;">
+          <tr>
+            <td style="padding: 0 24px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="left" style="padding: 16px 0;">
+                    <img src="/images/header-2-preview.png" alt="arwd Logo" border="0" width="178" height="21" style="display: inline-block; vertical-align: middle;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- header section -->
+          <!-- Убираем padding у родительского td и переносим его внутрь таблицы -->
+          <tr>
+            <td style="padding: 0;">
+              <table class="header" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-bottom: 1px solid #F3F0F7; border-top: 1px solid #F3F0F7; width: 100%; table-layout: fixed;">
+                <tr>
+                  <!-- Увеличиваем первую колонку под длинный текст -->
+                  <td style="padding: 24px 5px 24px 24px; width: 30%;" align="center">
+                    <a style="color:#0E0E0E; letter-spacing: -0.3px; font-weight: 500; text-transform: uppercase; font-size: 15px; text-decoration: none; display: inline-block; white-space: nowrap;" href="https://arwd.ru/awards" target="_blank" rel="noopener">
+                      победители 2025
+                    </a>
+                  </td>
+                  <!-- Вторая колонка чуть меньше -->
+                  <td style="padding: 24px 5px 24px 5px; width: 33%;" align="center">
+                    <a style="color:#0E0E0E; letter-spacing: -0.3px; font-weight: 500; text-transform: uppercase; font-size: 15px; text-decoration: none; display: inline-block; white-space: nowrap;" href="https://arwd.ru/awards" target="_blank" rel="noopener">
+                      правила премии
+                    </a>
+                  </td>
+                  <!-- Уменьшаем короткие колонки -->
+                  <td style="padding: 24px 5px 24px 5px; width: 20%;" align="center">
+                    <a style="color:#0E0E0E; letter-spacing: -0.3px; font-weight: 500; text-transform: uppercase; font-size: 15px; text-decoration: none; display: inline-block; white-space: nowrap;" href="https://arwd.ru/awards" target="_blank" rel="noopener">
+                      участники
+                    </a>
+                  </td>
+                  <td class="last-td" style="padding: 24px 24px 24px 5px; width: 25%;" align="center">
+                    <a style="color:#0E0E0E; letter-spacing: -0.3px; font-weight: 500; text-transform: uppercase; font-size: 15px; text-decoration: none; display: inline-block; white-space: nowrap;" href="https://arwd.ru/awards" target="_blank" rel="noopener">
+                      новости
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end header section -->
+          
+          <!-- title section -->
+          <tr >
+            <td style="padding: 40px 24px 0px 24px;">
+              <h2 class="title" style="margin: 0; font-size: 26px; font-style: normal; font-weight: 500; line-height: 110%; max-width: 100%; letter-spacing: -0.52px; text-transform: uppercase; color: #0E0E0E">
+                Здравствуйте, Александр!
+              </h2>
+            </td>
+          </tr>
+          <tr >
+            <td style="padding: 16px 24px 20px 24px;">
+              <p style="margin: 0; font-size: 16px; font-style: normal; font-weight: 400; line-height: 155%; max-width: 100%; color: #0E0E0E">
+                Ваша заявка успешно получена и зарегистрирована в системе. Материалы переданы на рассмотрение экспертному совету премии.
+              </p>
+            </td>
+          </tr>
+          <!--end title section -->
+
+          <!--main-img section -->
+          <tr >
+            <td style="padding: 0px 24px 36px 24px;">
+              <img src="/images/catalog-2.jpg" alt="DoBuy Logo" border="0" max-width="552" width="100%" height="auto"/>
+            </td>
+          </tr>
+          <tr >
+            <td style="padding: 0 24px 0px 24px;">
+              <p style="margin: 0; font-size: 16px; font-style: normal; font-weight: 400; line-height: 155%; max-width: 100%; color: #0E0E0E">
+                Ваша заявка успешно получена и зарегистрирована в системе. Материалы переданы на рассмотрение экспертному совету премии.
+              </p>
+            </td>
+          </tr>
+          <tr >
+            <td style="padding: 16px 24px 0px 24px;">
+              <p style="margin: 0; font-size: 16px; font-style: normal; font-weight: 400; line-height: 155%; max-width: 100%; color: #0E0E0E">
+                В ближайшее время проекты пройдут предварительный отбор в соответствии с критериями премии: архитектурная выразительность,
+                рациональность решений, качество реализации и раскрытие потенциала дерева как материала.
+              </p>
+            </td>
+          </tr>
+          <tr >
+            <td style="padding: 16px 24px 0px 24px;">
+              <p style="margin: 0; font-size: 16px; font-style: normal; font-weight: 400; line-height: 155%; max-width: 100%; color: #0E0E0E">
+                О результатах следующего этапа вы будете уведомлены дополнительно.
+              </p>
+            </td>
+          </tr>
+          <tr >
+            <td style="padding: 16px 24px 0px 24px;">
+              <p style="margin: 0; font-size: 16px; font-style: normal; font-weight: 400; line-height: 155%; max-width: 100%; color: #0E0E0E">
+                Благодарим за интерес к премии АРХИWOOD и вклад в развитие современной деревянной архитектуры.
+              </p>
+            </td>
+          </tr>
+          <tr >
+            <td style="padding: 16px 24px 0px 24px;">
+              <p style="margin: 0; font-size: 16px; font-style: normal; font-weight: 400; line-height: 155%; max-width: 100%; color: #0E0E0E">
+                С уважением,<br/>Оргкомитет премии АРХИWOOD
+              </p>
+            </td>
+          </tr>
+          <tr >
+            <td>
+              <table style="margin: 80px 0 0px; max-width: 600px; width: 100%; border-collapse: separate; border-spacing: 20px 0  " cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="user-social" style="width: 50%; border: 1px solid #E6E6E6; padding: 18px 16px; border-radius: 6px;" align="center">
+                    <a href="">
+                      <img src="/images/award.png" alt="telegram icon" border="0" width="40px" height="40px" style="display: block;"/>
+                      <p style="display: block; text-transform: uppercase; margin: 0; padding: 10px 0px 0px 0px; font-weight: 500; font-size: 15px; font-style: normal; line-height: 130%; color: #000000">
+                        О премии
+                      </p>
+                    </a>
+                  </td>
+                  <!-- <td width="20" style="width: 20px;">&nbsp;</td> -->
+                  <td class="user-social" style="width: 50%; border: 1px solid #E6E6E6; padding: 18px 16px; border-radius: 6px;" align="center">
+                    <a href="">
+                      <img src="/images/list.png" alt="telegram icon" border="0" width="40px" height="40px" style="display: block;"/>
+                      <p style="display: block; text-transform: uppercase; margin: 0; padding: 10px 0px 0px 0px; font-weight: 500; font-size: 15px; font-style: normal; line-height: 130%; color: #000000">
+                        Правила премии
+                      </p>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr >
+            <td style="padding: 40px 24px 60px 24px;">
+              <a href="https://dobuy.ru/" target="_blank" rel="noopener" style="display: block; ">
+                <img src="/images/winner-1.jpg" alt="DoBuy Logo" border="0" max-width="552" width="100%" height="auto"/>
+              </a>
+            </td>
+          </tr>
+          <tr >
+            <td>
+              <table style="max-width: 600px; width: 100%; margin-bottom: 48px; font-family: 'Inter', Arial, sans-serif, Helvetica;">
+                <tr >
+                  <td style="width: 100%;" colspan="7" align="center">
+                    <p style="display: block; margin: 0; padding: 0px 0px 16px 0px; font-weight: 500; font-size: 20px; font-style: normal; line-height: 120%; color: #0E0E0E">
+                      Мы всегда на связи
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table cellpadding="0" cellspacing="0" border="0" align="center" style="border-collapse: separate; border-spacing: 8px">
+                      <tr>
+                        <td align="center">
+                          <a href="https://dobuy.ru/" target="_blank" class="footer-list__link" rel="noopener" style="display: block; ">
+                            <img src="/images/tg.png" style="display: block; width: 40px; height: 40px;" alt="arrow" border="0">
+                          </a>
+                        </td>
+                        <td align="center">
+                          <a href="https://dobuy.ru/" target="_blank" class="footer-list__link" rel="noopener" style="display: block;">
+                            <img src="/images/dzen.png" style="display: block; width: 40px; height: 40px;" alt="arrow" border="0">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr >
+            <td style="width: 100%;" colspan="7" align="center">
+              <p style="display: block; margin: 0; padding: 0px 0px 40px 0px; font-weight: 400; font-size: 16px; font-style: normal; line-height: 138%; color: #0E0E0E">
+                © Национальная архитектурная премия АРХИWOOD
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!--[if (gte mso 9) | (IE)]>
+          </td>
+          </tr>
+          </table>
+        <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
